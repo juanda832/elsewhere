@@ -54,3 +54,40 @@
   overflow-wrap: normal;
   word-break: normal;
 }
+
+/* Final shop hero sizing fix */
+.shop-hero-banner {
+  min-height: 560px;
+}
+
+.shop-hero-copy {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  max-width: min(720px, 85%);
+}
+
+.shop-hero-copy h1 {
+  font-size: clamp(46px, 5.2vw, 78px);
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+
+@media (max-width: 680px) {
+  .shop-hero-banner {
+    min-height: 520px;
+  }
+
+  .shop-hero-copy {
+    left: 22px;
+    right: 22px;
+    max-width: none;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  .shop-hero-copy h1 {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+}
