@@ -273,3 +273,31 @@
     font-size: 15px !important;
   }
 }
+
+/* V7 — fix shop product images */
+.product-media {
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: #eef1f0 !important;
+}
+
+.product-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 8px !important;
+}
+
+.product-detail-media {
+  background: #eef1f0 !important;
+  border-radius: 18px !important;
+}
+
+.product-detail-media img {
+  width: 100% !important;
+  max-height: 680px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
