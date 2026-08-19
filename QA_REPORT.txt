@@ -1,0 +1,36 @@
+ELSEWHERE V16 — QA REPORT
+Generated after the full-content rebuild.
+
+AUTOMATED CHECKS PASSED
+- elsewhere-v16.js: JavaScript syntax valid (node --check).
+- catalog-v16.js: JavaScript syntax valid (node --check).
+- CSS braces balanced: 458 opening / 458 closing.
+- Duplicate IDs in index.html: 0.
+- Referenced local image assets missing: 0.
+- Shop product image references: 46 / 46 found.
+- Current priced products: 46.
+- Compatibility redirect targets missing: 0.
+- SPA render harness: 46 tested current routes, 0 routed to the 404 view.
+- Original App Lab screen-alias harness: 19 tested aliases, 0 routed to the 404 view.
+
+CONTENT COMPLETENESS CHECKED
+- Mission + vision.
+- Hub + four zones and their landmarks/restaurants.
+- Four headline attraction descriptions, audiences, education and sustainability.
+- Queue/scenes for M.E.G. Containment Protocol and scene/phase data where supplied.
+- Other attractions.
+- Full The Keeper + Echo information.
+- M.E.G. Research & Discovery Center + Robotics + Conservation + SSP.
+- Five sustainability systems + overall commitment + SDGs 6, 7, 9, 11, 12, 13, 15.
+- Ticket prices: $80 / $110 / $135; ages 2–5 Free; ages 6–15 $95; ages 16+ $110.
+- RunPass: $70; watch $15; website/app QR Free; “Needs previous payment.” retained.
+- Contact: +593 99 701 9798.
+- Complete schedule datasets.
+- Six dining datasets and listed menu prices.
+- Business estimates: ~3.5M visitors; ~$530M revenue; ~$79.5M profit; 15% margin; revenue mix retained.
+- Noclip OS, Abyss Vision, Control & Containment Post and early M.E.G. Survival Kit ideas.
+- 46 Shop @Elsewhere products and current listed prices.
+- Early merchandise concepts are kept without invented prices.
+
+BROWSER LIMITATION
+A real Chromium visual pass was attempted, but this environment blocks browser access to localhost/file URLs with ERR_BLOCKED_BY_ADMINISTRATOR. Because of that environment restriction, browser-pixel/layout validation could not be automated here. Runtime routing was instead exercised through a DOM-stub JavaScript harness in addition to syntax/static checks.

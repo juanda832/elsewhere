@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071015">
+  <meta name="description" content="Elsewhere — immersive Backrooms-inspired theme park concept.">
+  <title>Elsewhere — Find your way. Or don't.</title>
+  <link rel="icon" href="assets/elsewhere-logo.png" type="image/png">
+  <link rel="stylesheet" href="elsewhere-v16.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand route-link" href="#/home" aria-label="Elsewhere home">
+      <img src="assets/elsewhere-logo.png" alt="">
+      <span><strong>ELSEWHERE</strong><small>BACKROOMS THEME PARK</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="route-link" data-nav="park" href="#/park">Park</a>
+      <a class="route-link" data-nav="attractions" href="#/attractions">Attractions</a>
+      <a class="route-link" data-nav="experience" href="#/experience">Experience</a>
+      <a class="route-link" data-nav="learn" href="#/learn">M.E.G.</a>
+      <a class="route-link" data-nav="ecosystem" href="#/ecosystem">Ecosystem</a>
+      <a class="route-link" data-nav="sustainability" href="#/sustainability">Sustainability</a>
+      <a class="route-link" data-nav="visit" href="#/visit">Visit</a>
+      <a class="route-link shop-link" data-nav="shop" href="#/shop">Shop</a>
+    </nav>
+    <div class="header-actions">
+      <a class="ticket-button route-link" href="#/tickets">Tickets</a>
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="drawer">Menu</button>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="drawer-head"><strong>Find your way.</strong><button id="drawerClose" class="icon-button" type="button" aria-label="Close menu">×</button></div>
+      <div class="drawer-grid">
+        <div><p>Explore</p><a href="#/park">Park map + zones</a><a href="#/attractions">Attractions</a><a href="#/experience">Elsewhere experience</a><a href="#/characters">The Keeper + Echo</a><a href="#/archive">Concept archive</a><a href="#/routes">Route directory</a></div>
+        <div><p>Plan your visit</p><a href="#/visit">Visitor hub</a><a href="#/tickets">Tickets + RunPass</a><a href="#/schedule">Schedule</a><a href="#/dining">Dining</a></div>
+        <div><p>Discover</p><a href="#/learn">M.E.G. Research Center</a><a href="#/learn/ssp">Sustainable Storage Project</a><a href="#/sustainability">Sustainability</a><a href="#/ecosystem">Noclip OS + beyond</a><a href="#/business">Business model</a><a href="#/dossier">Complete project dossier</a><a href="#/feedback">Visitor feedback</a></div>
+        <div><p>Shop @Elsewhere</p><a href="#/shop">All 46 products</a><a href="#/shop/our-products">Our Products</a><a href="#/shop/premium">Premium</a><a href="#/shop/apparel">Apparel</a><a href="#/shop/kids">Kids</a><a href="#/shop/price-index">Price index</a><a href="#/shop/concept-archive">Early merch concepts</a></div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+
+  <div class="echo-system">
+    <button class="echo-fab" id="echoFab" type="button" aria-expanded="false" aria-controls="echoPanel" aria-label="Open Echo guide">
+      <img src="assets/shop/echo-plush.jpg" alt="">
+      <span>Ask Echo</span>
+    </button>
+    <aside class="echo-panel" id="echoPanel" aria-hidden="true">
+      <div class="echo-head"><div><small>PARK COMPANION</small><strong>Echo</strong></div><button id="echoClose" class="icon-button" type="button" aria-label="Close Echo guide">×</button></div>
+      <p id="echoText">...Hello... hello. If you are not sure where to go, I can point you somewhere useful.</p>
+      <div class="echo-actions">
+        <button type="button" data-echo="first">First visit</button>
+        <button type="button" data-echo="rides">Best rides</button>
+        <button type="button" data-echo="green">Sustainability</button>
+        <button type="button" data-echo="today">Today</button>
+        <button type="button" data-echo="shop">Shop</button>
+      </div>
+      <a id="echoJump" class="echo-jump" href="#/guide">Open the full guide →</a>
+    </aside>
+  </div>
+
+  <button class="cart-fab" id="cartFab" type="button" aria-expanded="false" aria-controls="cartDrawer"><span>Cart</span><b id="cartCount">0</b></button>
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><small>SHOP @ELSEWHERE</small><h2>Your cart</h2></div><button id="cartClose" class="icon-button" type="button" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="btn primary wide" id="copyOrder" type="button">Copy order summary</button>
+    <p class="cart-note">Demo cart — no real payment is processed on this website.</p>
+  </aside>
+
+  <dialog class="lightbox" id="lightbox"><div class="lightbox-head"><strong id="lightboxTitle"></strong><button class="icon-button" id="lightboxClose" type="button">×</button></div><img id="lightboxImage" alt="Expanded Elsewhere artwork"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="assets/elsewhere-logo.png" alt=""><div><strong>ELSEWHERE</strong><span>Find your way. Or don't.</span></div></div>
+    <div class="footer-links"><div><b>Explore</b><a href="#/park">Park</a><a href="#/attractions">Attractions</a><a href="#/characters">Mascots</a></div><div><b>Visit</b><a href="#/tickets">Tickets</a><a href="#/schedule">Schedule</a><a href="#/dining">Dining</a></div><div><b>Project</b><a href="#/learn">M.E.G.</a><a href="#/learn/ssp">SSP</a><a href="#/sustainability">Sustainability</a><a href="#/ecosystem">Ecosystem</a><a href="#/business">Business</a><a href="#/dossier">Full dossier</a></div><div><b>Shop</b><a href="#/shop">All products</a><a href="#/shop/price-index">All prices</a><a href="https://sites.google.com/view/shopelsewhere/our-products" target="_blank" rel="noopener noreferrer">Original shop ↗</a></div></div>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation"><a href="#/home" data-mobile="home">Home</a><a href="#/park" data-mobile="park">Park</a><a href="#/attractions" data-mobile="attractions">Rides</a><a href="#/visit" data-mobile="visit">Visit</a><a href="#/shop" data-mobile="shop">Shop</a></nav>
+
+  <script src="catalog-v16.js"></script>
+  <script src="elsewhere-v16.js"></script>
+</body>
+</html>

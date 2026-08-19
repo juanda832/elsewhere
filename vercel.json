@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {"source": "/index.html", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]},
+    {"source": "/elsewhere-v16.js", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]},
+    {"source": "/elsewhere-v16.css", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]},
+    {"source": "/catalog-v16.js", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]}
+  ]
+}
