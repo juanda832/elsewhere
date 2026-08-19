@@ -38,3 +38,19 @@
 @media(max-width:680px){.collection-banners.four{grid-template-columns:1fr}}
 .mascot-duo{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr;gap:24px;align-items:center;overflow:hidden}.mascot-duo img{width:100%;min-height:310px;height:100%;object-fit:cover}.mascot-duo>div{padding:26px}.mascot-duo h2{font-size:clamp(34px,4vw,58px);margin:0 0 12px}.mascot-duo p:last-child{color:var(--muted);line-height:1.7}
 @media(max-width:800px){.mascot-duo{grid-template-columns:1fr}.mascot-duo img{min-height:0;aspect-ratio:16/10}.mascot-duo>div{padding:20px}}
+
+/* Fix shop hero overlap */
+.shop-hero-banner,
+.collection-hero {
+  display: block;
+  width: 100%;
+}
+
+.shop-hero-copy {
+  max-width: min(600px, 82%);
+}
+
+.shop-hero-copy h1 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
